@@ -1,2 +1,2 @@
-# Belaris Dialgos
+# Belaris Dialogs
 Dialog utils to Android project
