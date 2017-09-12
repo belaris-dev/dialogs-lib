@@ -1,2 +1,2 @@
-# dialogs-lib
-Dialogs util
+# Belaris Dialgos
+Dialog utils to Android project
