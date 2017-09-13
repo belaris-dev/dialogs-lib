@@ -1,18 +1,30 @@
 package com.belaris.dialogoslib;
 
-/**
- * Created by garispe on 11/9/17.
- */
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 
-public abstract class BelarisDialog extends AlertDialog.Builder {
+public class BelarisDialog extends AlertDialog.Builder {
 
-    public BelarisDialog(Context context) {
+    BelarisDialog(Context context) {
         super(context);
+    }
+
+    public BelarisDialog(Context context, String titulo, String mensaje) {
+        super(context);
+        setTitle(titulo);
+        setMessage(mensaje);
+    }
+
+    public BelarisDialog(Context context, int titulo, int mensaje) {
+        super(context);
+        setTitle(titulo);
+        setMessage(mensaje);
+    }
+
+    public void showDialog() {
+        create().show();
     }
 }
