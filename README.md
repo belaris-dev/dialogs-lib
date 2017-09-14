@@ -10,7 +10,7 @@ The easy way to create AlertDialogs in Android projects.
 
 Add it in your root build.gradle:
 
-```
+```Gradle
 allprojects {
   repositories {
     ...
@@ -23,7 +23,7 @@ allprojects {
 
 Add the dependecy:
 
-```
+```Gradle
 dependencies {
   compile 'com.github.belaris-dev:dialogs-lib:1.0.0'
 }
