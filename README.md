@@ -25,7 +25,7 @@ Add the dependecy:
 
 ```Gradle
 dependencies {
-  compile 'com.github.belaris-dev:dialogs-lib:1.0.0'
+  compile 'com.github.belaris-dev:dialogs-lib:latest.release.here'
 }
 ```
 
