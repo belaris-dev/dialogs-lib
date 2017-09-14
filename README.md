@@ -28,6 +28,7 @@ dependencies {
   compile 'com.github.belaris-dev:dialogs-lib:1.0.0'
 }
 ```
+
 ## How to use
 
 Create a **default** dialog:
@@ -67,6 +68,7 @@ dialog.setNegativeButton("Negative", new DialogInterface.OnClickListener() {
     }
 });
 ```
+
 
 ## License
 
