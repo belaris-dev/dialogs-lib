@@ -4,7 +4,7 @@
 
 The easy way to create AlertDialogs in Android projects.
 
-## How to
+## How to install
 
 ### Step 1
 
@@ -27,6 +27,45 @@ Add the dependecy:
 dependencies {
   compile 'com.github.belaris-dev:dialogs-lib:1.0.0'
 }
+```
+## How to use
+
+Create a **default** dialog:
+
+```
+BelarisDialog dialog = new BelarisDialog(context, "Title", "Message!");
+dialog.showDialog();
+```
+
+Create a **custom** dialog:
+
+```
+BelarisDialog dialog = new BelarisCustomDialog(this, R.layout.your_custom_dialog_layout) {
+    @Override
+    protected void configCustomViews(View rootView) {
+        // Instantiate your views here. i.e:
+        TextView textView = rootView.findViewById(R.id.text);
+    }
+};
+dialog.showDialog();
+```
+
+Add default buttons:
+
+```
+dialog.setPositiveButton("Positive", new DialogInterface.OnClickListener() {
+    @Override
+    public void onClick(DialogInterface dialogInterface, int i) {
+         // Positive behavior
+    }
+});
+
+dialog.setNegativeButton("Negative", new DialogInterface.OnClickListener() {
+    @Override
+    public void onClick(DialogInterface dialogInterface, int i) {
+        // Negative behavior
+    }
+});
 ```
 
 ## License
