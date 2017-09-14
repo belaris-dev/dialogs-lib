@@ -33,14 +33,14 @@ dependencies {
 
 Create a **default** dialog:
 
-```
+```java
 BelarisDialog dialog = new BelarisDialog(context, "Title", "Message!");
 dialog.showDialog();
 ```
 
 Create a **custom** dialog:
 
-```
+```java
 BelarisDialog dialog = new BelarisCustomDialog(this, R.layout.your_custom_dialog_layout) {
     @Override
     protected void configCustomViews(View rootView) {
@@ -53,7 +53,7 @@ dialog.showDialog();
 
 Add default buttons:
 
-```
+```java
 dialog.setPositiveButton("Positive", new DialogInterface.OnClickListener() {
     @Override
     public void onClick(DialogInterface dialogInterface, int i) {
