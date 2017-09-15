@@ -1,6 +1,7 @@
 # Belaris Dialogs
 
 [![](https://jitpack.io/v/belaris-dev/dialogs-lib.svg)](https://jitpack.io/#belaris-dev/dialogs-lib)
+[![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 
 The easy way to create AlertDialogs in Android projects.
 
